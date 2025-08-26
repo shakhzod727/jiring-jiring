@@ -1,22 +1,28 @@
-header {
-  width: 100%;
-  padding: 10px;
-  position: relative;
+p, h1, h2, h3 {
+  max-width: 100%;
+  word-wrap: break-word;
+}
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: center; /* markazga joylashtiradi */
+  gap: 10px;
 }
 
 .logo {
-  width: 151px;         
-  position: absolute;
-  top: 66px;            
-  right: 1px;           
+  width: 50px;   /* logotip o‘lchami */
+  height: auto;
 }
-h1 {
-  font-size: 5.5rem; 
+.header {
+  text-align: center;
 }
 
-p {
-  font-size: 4.2rem; 
+.logo {
+  display: block;
+  margin: 0 auto;
+  width: 70px;
 }
+
 
 
 
