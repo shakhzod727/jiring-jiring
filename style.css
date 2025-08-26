@@ -1,19 +1,20 @@
 header {
   width: 100%;
-  padding: 30px;
+  padding: 50px;
   position: relative;
 }
 
 .logo {
-  width: 150px;         
+  width: 200px;         
   position: absolute;
-  top: 15px;            
-  right: 20px;  
+  top: 25px;            
+  right: 30px;  
 h1 {
-  font-size: 40px;
+  font-size: 100px;
 }
 
 p {
-  font-size: 20px; 
+  font-size: 100px; 
+
 
 
