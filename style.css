@@ -1,34 +1,33 @@
 body {
-  font-size: 22px; 
-  line-height: 1.7;
+  font-family: Arial, sans-serif;
+  font-size: 16px; /* Noutbuk uchun */
+  line-height: 1.6;
 }
 
-h1 {
-  font-size: 36px;  
-}
-
-h2 {
-  font-size: 30px;
-}
-
-p {
-  font-size: 22px; 
-}
-
-@media (max-width: 600px) {
+/* Telefon uchun alohida qoida */
+@media (max-width: 768px) {
   body {
-    font-size: 34px;
+    font-size: 14px; /* Telefonlarda kichikroq, lekin o‘qilishi yaxshi */
   }
   h1 {
-    font-size: 48px;
-  }
-  h2 {
-    font-size: 42px;
+    font-size: 1.8rem;
   }
   p {
-    font-size: 34px;
+    font-size: 1rem;
   }
 }
+header {
+  position: relative;
+}
+
+.logo {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  width: 60px; /* Logotip o‘lchami */
+  height: auto;
+}
+
 
 
 
