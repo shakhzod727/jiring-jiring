@@ -31,12 +31,20 @@
 </body>
 <script>
   const background = document.querySelector('.background');
+  const colors = [
+    "rgba(0,123,255,0.2)",  // ko‘k
+    "rgba(255,0,0,0.2)",    // qizil
+    "rgba(40,167,69,0.2)",  // yashil
+    "rgba(255,193,7,0.2)",  // sariq
+    "rgba(108,117,125,0.2)" // kulrang
+  ];
 
-  for (let i = 0; i < 20; i++) {  // nechta aylana chiqishini belgilash
+  for (let i = 0; i < 20; i++) {
     let circle = document.createElement('span');
-    circle.style.left = Math.random() * 100 + 'vw'; // tasodifiy joy
-    circle.style.width = circle.style.height = Math.random() * 40 + 20 + 'px'; // 20–60px
-    circle.style.animationDuration = (Math.random() * 10 + 10) + 's'; // 10–20s
+    circle.style.left = Math.random() * 100 + 'vw';
+    circle.style.width = circle.style.height = Math.random() * 40 + 20 + 'px';
+    circle.style.animationDuration = (Math.random() * 10 + 10) + 's';
+    circle.style.background = colors[Math.floor(Math.random() * colors.length)]; // random rang
     background.appendChild(circle);
   }
 </script>
