@@ -1,48 +1,60 @@
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Body */
 body {
   font-family: Arial, sans-serif;
-  font-size: 16px; /* Noutbuk uchun */
+  background: #f5f5f5;
+  color: #222;
   line-height: 1.6;
 }
 
-/* Telefon uchun alohida qoida */
+/* Logo top-right */
+.logo {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  width: 60px;
+  height: auto;
+}
+
+/* Responsive text */
+h1 {
+  font-size: 2.5rem;
+  text-align: center;
+  margin: 20px 0;
+}
+
+h2 {
+  font-size: 1.8rem;
+  margin: 15px 0;
+  text-align: center;
+}
+
+p {
+  font-size: 1.2rem;
+  text-align: center;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+/* Responsive for mobile */
 @media (max-width: 768px) {
-  body {
-    font-size: 14px; /* Telefonlarda kichikroq, lekin o‘qilishi yaxshi */
-  }
   h1 {
-    font-size: 1.8rem;
+    font-size: 2rem;
+  }
+  h2 {
+    font-size: 1.5rem;
   }
   p {
     font-size: 1rem;
   }
-}
-header {
-  position: relative;
-}
-
-.logo {
-  position: absolute;
-  top: 10px;
-  right: 10px;
-  width: 60px; /* Logotip o‘lchami */
-  height: auto;
-}
-
-/* Asosiy shriftlar (noutbuk uchun) */
-body {
-  font-size: 18px;
-  line-height: 1.6;
-}
-
-/* Telefon (kichkina ekran) uchun maxsus o‘lchamlar */
-@media (max-width: 768px) {
-  body {
-    font-size: 20px;   /* matn kattaroq chiqadi */
-    line-height: 1.8;  /* qator oralig‘i kengroq bo‘ladi */
-  }
-
-  h1, h2, h3 {
-    font-size: 22px;   /* sarlavhalarni ham kattalashtiramiz */
+  .logo {
+    width: 50px;
   }
 }
 
