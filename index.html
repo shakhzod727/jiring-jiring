@@ -12,17 +12,6 @@
   <header>
     <h1>My favourite Bmws</h1>
   </header>
-<script>
-  const background = document.querySelector('.background');
-
-  for (let i = 0; i < 20; i++) {  // nechta aylana chiqishini belgilash
-    let circle = document.createElement('span');
-    circle.style.left = Math.random() * 100 + 'vw'; // tasodifiy joy
-    circle.style.width = circle.style.height = Math.random() * 40 + 20 + 'px'; // 20–60px
-    circle.style.animationDuration = (Math.random() * 10 + 10) + 's'; // 10–20s
-    background.appendChild(circle);
-  }
-</script>
 
   <main>
     <section>
@@ -40,6 +29,17 @@
     </section>
   </main>
 </body>
+<script>
+  const background = document.querySelector('.background');
+
+  for (let i = 0; i < 20; i++) {  // nechta aylana chiqishini belgilash
+    let circle = document.createElement('span');
+    circle.style.left = Math.random() * 100 + 'vw'; // tasodifiy joy
+    circle.style.width = circle.style.height = Math.random() * 40 + 20 + 'px'; // 20–60px
+    circle.style.animationDuration = (Math.random() * 10 + 10) + 's'; // 10–20s
+    background.appendChild(circle);
+  }
+</script>
 
 
 
