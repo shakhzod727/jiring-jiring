@@ -28,6 +28,24 @@ header {
   height: auto;
 }
 
+/* Asosiy shriftlar (noutbuk uchun) */
+body {
+  font-size: 18px;
+  line-height: 1.6;
+}
+
+/* Telefon (kichkina ekran) uchun maxsus o‘lchamlar */
+@media (max-width: 768px) {
+  body {
+    font-size: 20px;   /* matn kattaroq chiqadi */
+    line-height: 1.8;  /* qator oralig‘i kengroq bo‘ladi */
+  }
+
+  h1, h2, h3 {
+    font-size: 22px;   /* sarlavhalarni ham kattalashtiramiz */
+  }
+}
+
 
 
 
