@@ -29,50 +29,7 @@
     </section>
   </main>
 </body>
-  <!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <style>
-    body {
-      background: #fff;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      height: 100vh;
-    }
-
-    h1 {
-      font-size: 60px;
-      font-weight: bold;
-      color: #000;
-      position: relative;
-      overflow: hidden;
-    }
-
-    h1::before {
-      content: "";
-      position: absolute;
-      top: 0;
-      left: -100%;
-      width: 100%;
-      height: 100%;
-      background: linear-gradient(120deg, transparent, rgba(255,255,255,0.8), transparent);
-      animation: shine 2.5s infinite;
-    }
-
-    @keyframes shine {
-      0% {
-        left: -100%;
-      }
-      100% {
-        left: 100%;
-      }
-    }
-  </style>
-</head>
-</body>
+ 
 
 <script>
   const background = document.querySelector('.background');
@@ -93,6 +50,7 @@
     background.appendChild(circle);
   }
 </script>
+
 
 
 
